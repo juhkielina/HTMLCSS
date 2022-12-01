@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <meta name="description" content="Nettisivujen pohjatiedosto">
+    <meta name="keywords" content="HTML, CSS, harjoitus, nettisivut">
+    <meta name="author" content="Elina Johansson">
+    <link rel="stylesheet" href="pohja.css">
+    <script src="form.js" defer></script>
+    <title>Form</title>
+  </head>
+<body>
+  <header>
+    <h1>Excercise 2</h1>
+    <p>Create a contact form</p>
+    <p>Päiväys 1.12.2022</p>
+  </header>
+
+<nav>
+    <a href="pohja.html">Pohjatiedostoon</a>
+</nav>
+
+<img src="https://cataas.com/cat" width="400">
+
+<h2>Dropdown/select valikko</h2>
+
+<form action="done.html" method="get">
+  <label for="cars">Sukupuoli:</label><br>
+  <select name="cars" id="cars">
+    <option value="Mies">Mies</option>
+    <option value="Nainen">Nainen</option>
+    <option value="Muu/en halua kertoa">Muu/en halua kertoa</option>
+  </select>
+
+<h2>Input etunimelle ja sukunimelle</h2>
+<p>
+    <label>
+      Etunimi:<br>
+      <input type="text" placeholder="Etunimi ">
+    </label>
+</p>
+<p>
+    <label>
+      Sukunimi:<br>
+      <input type="text" placeholder="Sukunimi ">
+    </label>
+</p>
+<h2>Input sähköpostille</h2>
+<p>
+    <label for="emailInput">Sähköposti:</label><br>
+    <input id="emailInput"  placeholder="Anna sähköposti "type="email">
+</p>
+<h2>Input puhelinnumerolle</h2>
+<p>
+    <label for="telInput">Puhelinnumero:</label><br>
+    <input id="telInput" name="telInput"  placeholder="Anna numero " type="tel" pattern="/d/" />
+</p>
+<h2>Radio button valikko</h2>
+    <label for="valitsin">Ensisijainen yhteydenottotapa:</label><br>
+    <input type="radio" id="valitsin" name="fav_language" value="tel">
+    <label for="html">Puhelimitse</label><br>
+    <input type="radio" id="valitsin" name="fav_language" value="email">
+    <label for="css">Sähköpostilla</label><br>
+
+
+<h2>Input multiline text</h2>
+    <label for="textArea">Vapaa sana:</label><br>
+<textarea id="textArea" name="textArea" rows="4" cols="50"></textarea>
+<br>
+<button type="submit">Submit</button>
+</form>
+
+<footer>
+    <p>Tämä tässä oon footer</p>
+    <p>Author: Elina Johansson</p>
+    <p><a href="mailto:elina.johansson96@gmail.com">elina.johansson96@gmail.com</a></p>
+</footer>
+    
+</body>
+</html>
